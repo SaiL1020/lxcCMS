@@ -50,6 +50,9 @@
             <div class="form-group">
                 <div class="col-sm-12">
                     <input type="submit" class="btn btn-primary" value="登录"/>
+                    <button class="btn btn-info cancel" form="facebook">
+                        <span class="fa fa-facebook"></span>
+                    </button>
                     <button class="btn btn-info cancel" form="qq">
                         <span class="fa fa-qq"></span>
                     </button>
@@ -58,6 +61,7 @@
             </div>
         </form>
         <div hidden>
+            <form id="facebook" action="/signin/facebook" method="post"></form>
             <form id="qq" action="/signin/qq" method="post"></form>
         </div>
     </div>

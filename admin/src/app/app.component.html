@@ -1,10 +1,43 @@
 <md-toolbar>
-  <i id="menuIcon" class="material-icons" (click)="sideBarClicked()">menu</i> {{title}}
+    <button md-button (click)="sideBarClicked()">
+        <md-icon>dehaze</md-icon>
+    </button> {{title}}
 </md-toolbar>
 
 <md-sidenav-container>
-  <md-sidenav id="sidebar" [mode]='sideBarMode' [opened]="isSideBarOpen">
-    <app-side-navbar></app-side-navbar>
-  </md-sidenav>
-  <router-outlet></router-outlet>
+    <md-sidenav [mode]='sideBarMode' [opened]="isSideBarOpen">
+        <ul>
+            <li>
+                <a routerLink="user">
+                    <md-icon>account_box</md-icon>
+                    User
+                </a>
+            </li>
+            <li>
+                <a routerLink="article">
+                    <md-icon>book</md-icon>
+                    Aricle
+                </a>
+            </li>
+            <li>
+                <a routerLink="comment">
+                    <md-icon>comment</md-icon>
+                    Comment
+                </a>
+            </li>
+            <li>
+                <a routerLink="downloader">
+                    <md-icon>cloud_download</md-icon>
+                    Downloader
+                </a>
+            </li>
+            <li>
+                <a routerLink="file">
+                    <md-icon>insert_drive_file</md-icon>
+                    file
+                </a>
+            </li>
+        </ul>
+    </md-sidenav>
+    <router-outlet></router-outlet>
 </md-sidenav-container>
