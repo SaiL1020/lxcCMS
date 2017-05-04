@@ -3,6 +3,7 @@
 ## Intro
 + This is a Java Web project forked from Xiaocong Li (@lixiaocong)
 + I am working on providing a **REST service** relating to Shadowsocks
++ 中文请查看[README.zh](https://github.com/SaiL1020/lxcCMS/blob/dev/README.zh.md)
 
 ## Blog
 + Sign up / Log in by users
