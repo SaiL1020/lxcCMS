@@ -1,28 +1,30 @@
-# lixiaocong的内容管理系统
+# Content Management System by Xiaocong Li
 
-## 博客部分
-+ 用户的注册登录
-+ 文章增删改查
+## Intro
++ This is a Java Web project forked from Xiaocong Li (@lixiaocong)
++ I am working on providing a **REST service** relating to Shadowsocks
 
-## 管理部分
-+ 对Transmission任务的添加,删除,下载
+## Blog
++ Sign up / Log in by users
++ Features on articles: write, remove, modify, look-up
 
-## 微信公众号
-+ 可以设置公众号token，公众号可以获取最新文章
+## Management
++ Transmission activities: add, remove, download
 
-## 技术
-+ 逻辑层：spring
-+ 数据层：hibernate + jpa + mysql
-+ 表示层：jsp + angular
+## Wechat Official Account
++ Ability to set the token & pull up the latest articles
 
-## 服务器需要安装的程序：（建议使用docker）
-+ mysql5.7，创建blog表
-+ transmission-daemon，设置用户名密码
-+ aria2c,设置token
+## Techniques in use
++ Business Logic Layer : **spring**
++ Data Access Layer : **hibernate** + **jpa** + **mysql**
++ User Interface : **jsp** + **angular**
 
-## 计划
-+ (增加aria2c支持)
-+ (计划升级为angular2 + websocket)
-+ (计划增加google的ui风格)
-+ (准备删除Facebook）
-+ (添加邮件支持）
+## Requirement on the server-side (Docker recommended)
++ mysql5.7 : need create the blog table
++ transmission-daemon : need id/pwd setting
++ aria2c : need token setting
+
+## Future work
++ (upgrading to angular2 & websocket)
++ (option to have google ui)
++ (email supporting)
